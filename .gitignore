@@ -1,5 +1,7 @@
 .vscode
 .idea
+data
+huggingface/
 
 venv
 __pycache__
