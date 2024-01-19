@@ -1,0 +1,16 @@
+[
+    {
+        "prompt": "(masterpiece, best quality:1.2), a person preparing a pizza on a table in a kitchen,",
+        "negative_prompt": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, ",
+        "width": 1024,
+        "height": 576,
+        "scale": 7.0,
+        "strength": 0.7,
+        "sample_steps": 24,
+        "seed": 1337,
+        "image": "/home/longc/data/code/lora-scripts/config/video-example/images/00006153.jpg",
+        "mask": "/home/longc/data/code/lora-scripts/config/video-example/masks/00006153.png",
+        "prev_image": "/home/longc/data/code/lora-scripts/config/video-example/images/00006152.jpg",
+        "prev_mask": "/home/longc/data/code/lora-scripts/config/video-example/masks/00006152.png"
+    }
+]
