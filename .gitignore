@@ -8,6 +8,7 @@ __pycache__
 
 output/*
 !output/.keep
+video-inpainting/output
 
 py310
 python

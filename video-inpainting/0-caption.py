@@ -1,10 +1,22 @@
+from typing import List
 from tqdm import tqdm
 from pathlib import Path
 import torch
 from PIL import Image
 from lavis.models import load_model_and_preprocess
+from argparse import ArgumentParser
 
-src_dir = Path("/data/video-dataset/VSPW/")
+
+def parse_args(argv: List[str] = None):
+    parser = ArgumentParser()
+    parser.add_argument(
+        "src_dir", type=str, default="/data/video-dataset/VSPW/data/*/origin"
+    )
+    return parser.parse_args(argv)
+
+
+args = parse_args()
+src_dir = Path(args.src_dir)
 
 device = torch.device("cuda") if torch.cuda.is_available() else "cpu"
 model, vis_processors, _ = load_model_and_preprocess(
@@ -23,9 +35,7 @@ def get_caption(filename: str):
 
 
 # Generate captions for all frames
-images = sorted(
-    src_dir.glob("data/*/origin/*.jpg"), key=lambda p: (p.parents[1], p.name)
-)
+images = sorted(src_dir.rglob("*.jpg"), key=lambda p: (p.parents[1], p.name))
 for image_file in tqdm(images):
     outputfile = image_file.parents[1] / "caption" / image_file.with_suffix(".txt").name
     outputfile.parent.mkdir(parents=True, exist_ok=True)
