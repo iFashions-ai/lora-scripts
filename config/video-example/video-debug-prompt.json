@@ -26,5 +26,33 @@
         "mask": "/home/longc/data/code/lora-scripts/config/video-example/masks/00006154.png",
         "prev_image": "/home/longc/data/code/lora-scripts/config/video-example/images/00006153.jpg",
         "prev_mask": "/home/longc/data/code/lora-scripts/config/video-example/masks/00006153.png"
+    },
+    {
+        "prompt": "(masterpiece, best quality:1.2), a desk with two monitors and a chair in a room",
+        "negative_prompt": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, ",
+        "width": 1024,
+        "height": 576,
+        "scale": 7.0,
+        "strength": 1.0,
+        "sample_steps": 24,
+        "seed": 1337,
+        "image": "/home/longc/data/code/lora-scripts/config/video-example-2/images/00000365.jpg",
+        "mask": "/home/longc/data/code/lora-scripts/config/video-example-2/masks/00000365.png",
+        "prev_image": "/home/longc/data/code/lora-scripts/config/video-example-2/images/00000363.jpg",
+        "prev_mask": "/home/longc/data/code/lora-scripts/config/video-example-2/masks/00000363.png"
+    },
+    {
+        "prompt": "(masterpiece, best quality:1.2), a desk with two monitors and a chair in a room",
+        "negative_prompt": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, ",
+        "width": 1024,
+        "height": 576,
+        "scale": 7.0,
+        "strength": 1.0,
+        "sample_steps": 24,
+        "seed": 1337,
+        "image": "/home/longc/data/code/lora-scripts/config/video-example-2/images/00000366.jpg",
+        "mask": "/home/longc/data/code/lora-scripts/config/video-example-2/masks/00000366.png",
+        "prev_image": "/home/longc/data/code/lora-scripts/config/video-example-2/images/00000363.jpg",
+        "prev_mask": "/home/longc/data/code/lora-scripts/config/video-example-2/masks/00000363.png"
     }
 ]
